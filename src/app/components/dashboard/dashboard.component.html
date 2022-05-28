@@ -58,7 +58,7 @@
           </div>
       </ng-container>
   </div>
-  <mat-paginator *ngIf="!isCategory" [length]="this.productList.length+1+(this.pageIndex*10)" (page)="onPageChange($event)" [showFirstLastButtons]="true"  [hidePageSize]="true" [pageSizeOptions]="[10]" aria-label="Select page of users"></mat-paginator>
 <span></span>
 </div>
+<mat-paginator [length]="this.productList.length+1+(this.pageIndex*10)" (page)="onPageChange($event)" [showFirstLastButtons]="true"  [hidePageSize]="true" [pageSizeOptions]="[10]" aria-label="Select page of users"></mat-paginator>
 
